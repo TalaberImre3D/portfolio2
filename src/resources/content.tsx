@@ -60,9 +60,9 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>LONE CUBE DESIGN</>,
   featured: {
-    display: true,
+    display: false,
     title: (
       <Row gap="12" vertical="center">
         <strong className="ml-4">Once UI</strong>{" "}
@@ -76,7 +76,7 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+    I'm Imre, a media design student at <Text as="span" size="xl" weight="strong">METU</Text>, where I learn about art and technology. <br /> In the mean time I build my own projects.
 </>
   ),
 };
