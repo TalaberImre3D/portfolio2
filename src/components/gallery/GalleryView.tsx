@@ -12,6 +12,7 @@ export default function GalleryView() {
           <ModelCard
             key={item.src}
             src={item.src}
+            poster={item.poster}
             alt={item.alt}
             aspectRatio={item.orientation === "horizontal" ? "16 / 9" : "3 / 4"}
           />
