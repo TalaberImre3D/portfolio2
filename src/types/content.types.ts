@@ -1,11 +1,9 @@
-import { IconName } from "@/resources/icons";
-import { zones } from "tzdata";
+import type { IconName } from "@/resources/icons";
 
 /**
  * IANA time zone string (e.g., 'Asia/Calcutta', 'Europe/Vienna').
- * See: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
  */
-export type IANATimeZone = Extract<keyof typeof zones, string>; // Narrow to string keys for React usage
+export type IANATimeZone = string;
 
 /**
  * Represents a person featured in the portfolio.
@@ -228,13 +226,27 @@ export interface Work extends BasePageConfig {}
  * @description Configuration for the Gallery page, including metadata, navigation label, and image list.
  */
 export interface Gallery extends BasePageConfig {
-  /** List of images in the gallery */
-  images: Array<{
-    /** Image source path */
-    src: string;
-    /** Image alt text */
-    alt: string;
-    /** Image orientation (horizontal/vertical) */
-    orientation: string;
-  }>;
+  /** List of items in the gallery */
+  images: Array<
+    | {
+        type?: "image";
+        /** Image source path */
+        src: string;
+        /** Image alt text */
+        alt: string;
+        /** Image orientation (horizontal/vertical) */
+        orientation: "horizontal" | "vertical";
+      }
+    | {
+        type: "model";
+        /** Model source path */
+        src: string;
+        /** Model alt text */
+        alt: string;
+        /** Model orientation used for gallery layout */
+        orientation: "horizontal" | "vertical";
+        /** Optional poster image for the model */
+        poster?: string;
+      }
+  >;
 }

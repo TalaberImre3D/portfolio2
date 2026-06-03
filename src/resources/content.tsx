@@ -308,9 +308,11 @@ const gallery: Gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
+      type: "model",
+      src: "/models/kulacs.glb",
+      poster: "/models/kulacs.jpg",
+      alt: "3D model preview of a kulacs",
+      orientation: "horizontal",
     },
   ],
 };
