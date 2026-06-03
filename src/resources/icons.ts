@@ -27,7 +27,20 @@ import {
   SiNextdotjs,
   SiFigma,
   SiSupabase,
+  SiUnrealengine,
+  SiNuke,
 } from "react-icons/si";
+
+import{
+  BiLogoBlender,
+} from "react-icons/bi";
+
+import{
+  TbBrandAdobePremier,
+  TbBrandAdobeAfterEffect,
+  TbBrandAdobe,
+  TbBrandCinema4D,
+} from "react-icons/tb";
 
 import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaInstagram, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, } from "react-icons/fa6";
 
@@ -64,6 +77,13 @@ export const iconLibrary: Record<string, IconType> = {
   reddit: FaReddit,
   telegram: FaTelegram,
   instagram: FaInstagram,
+  blender: BiLogoBlender,
+  unrealEngine: SiUnrealengine,
+  videoEditing: TbBrandAdobePremier,
+  afterEffects: TbBrandAdobeAfterEffect,
+  nuke: SiNuke,
+  adobe: TbBrandAdobe,
+  cinema4D: TbBrandCinema4D,
 };
 
 export type IconLibrary = typeof iconLibrary;

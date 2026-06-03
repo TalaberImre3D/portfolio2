@@ -6,10 +6,10 @@ const person: Person = {
   lastName: "Talabér",
   name: `Imre Talabér`,
   role: "Media Designer",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/avatar2.jpg",
   email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "Europe/Budapest", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Hungarian"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -102,9 +102,10 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Imre is a Budapest-based media designer with a passion for
+        creating incredible and stunning virtual worlds.
+        His work spans 3d models, videos, archviz and 
+        video games which blends into a diverse portfolio.
       </>
     ),
   },
@@ -113,18 +114,12 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Spaceship scavenger",
+        timeframe: "2024 - 2025",
+        role: "3D Artist",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          "Created 3D assets and took part in the level design process.",
+          "Made countless of hours in playtesting and overall polishing to make sure the game is as good as it can be."
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
@@ -137,18 +132,12 @@ const about: About = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Individual contractor",
+        timeframe: "2019 - present",
+        role: "Video editor and videographer",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+          "Worked with various clients to create engaging video content for social media and marketing campaigns.",
+          "Captured local cultural events and created videos for city tourism promotion"
         ],
         images: [],
       },
@@ -159,13 +148,9 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
+        name: "Budapest Metropolitan University",
+        description: <>Studying media design.</>,
+      }
     ],
   },
   technical: {
@@ -173,15 +158,23 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "3D modeling, texturing and animation",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Able to create 3D models and animations.</>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
+            name: "Blender",
+            icon: "blender",
           },
+          {
+            name: "Substance 3D Painter",
+            icon: "adobe",
+          },
+          {
+            name: "Cinema 4D",
+            icon: "cinema4D",
+          }
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
@@ -200,23 +193,44 @@ const about: About = {
         ],
       },
       {
-        title: "Next.js",
+        title: "Unreal Engine",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Creating environments and rendering them in high quality.</>
         ),
         tags: [
           {
-            name: "JavaScript",
-            icon: "javascript",
+            name: "Unreal Engine",
+            icon: "unrealEngine",
+          }
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/cover-04.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Video editing",
+        description: (
+          <>Editing motion picture and creating effects on it.</>
+        ),
+        tags: [
+          {
+            name: "Adobe Premier Pro",
+            icon: "videoEditing",
           },
           {
-            name: "Next.js",
-            icon: "nextjs",
+            name: "Adobe After Effects",
+            icon: "afterEffects",
           },
           {
-            name: "Supabase",
-            icon: "supabase",
-          },
+            name: "Nuke",
+            icon: "nuke",
+          }
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
