@@ -273,47 +273,55 @@ const gallery: Gallery = {
   // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
+      type:"model",
+      src: "models/bankerslamp.glb",
+      poster: "models/bankerslamp_thumbnail.jpg",
+      alt: "3D model preview of a bankers lamp",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
+      type:"model",
+      src:"models/chair_big.glb",
+      poster: "models/chair_big_thumbnail.jpg",
+      alt: "3D model preview of a chair",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
+      type:"model",
+      src:"models/chair_small.glb",
+      poster: "models/chair_small_thumbnail.jpg",
+      alt: "3D model preview of a chair",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
+      type:"model",
+      src:"models/desertEagle.glb",
+      poster: "models/deserteagle_thumbnail.jpg",
+      alt: "3D model preview of a desert scene",
       orientation: "horizontal",
     },
     {
-      type: "model",
-      src: "/models/kulacs.glb",
-      poster: "/models/kulacs.jpg",
-      alt: "3D model preview of a kulacs",
+      type:"model",
+      src:"models/frontloader.glb",
+      poster: "models/frontloader_thumbnail.jpg",
+      alt: "3D model preview of a frontloader",
       orientation: "horizontal",
     },
+    {
+      type:"model",
+      src:"models/toggleable_switch.glb",
+      poster: "models/toggleable_switch_thumbnail.jpg",
+      alt: "3D model preview of a toggleable switch",
+      orientation: "horizontal",
+    },
+    {
+      type:"model",
+      src:"models/wall_computer.glb",
+      poster: "models/wall_computer_thumbnail.jpg",
+      alt: "3D model preview of a wall computer",
+      orientation: "horizontal",
+    }
+
   ],
 };
 
