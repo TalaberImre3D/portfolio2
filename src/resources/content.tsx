@@ -124,7 +124,13 @@ const about: About = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/imported/TrailerSequenceVideo.mp4",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/imported/asset_vid.mp4",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -247,11 +253,24 @@ const about: About = {
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
+            src: "/images/imported/editing_image_2.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
           },
+          {
+            src: "/images/imported/editing_image_1.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/imported/nuke_showreel.mp4",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          }
+
         ],
       },
     ],
